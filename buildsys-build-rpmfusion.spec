@@ -2,8 +2,8 @@
 
 Name:           buildsys-build-%{repo}
 Epoch:          10
-Version:        15
-Release:        6.1.R
+Version:        16
+Release:        5.R
 Summary:        Tools and files used by the %{repo} buildsys 
 
 Group:          Development/Tools
@@ -86,20 +86,23 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-* Tue Aug  2 2011 Arkady L. Shane <ashejn@russianfedora.ru>- 10:15-6.1.R
-- rebuild for kernel 2.6.40-4.fc15
+* Mon Nov 14 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 10:16-5.R
+- rebuilt for kernel 3.1.1-1.fc16
 
-* Fri Jul 08 2011 Nicolas Chauvet <kwizart@gmail.com> - 10:15-6
-- rebuild for kernel 2.6.38.8-35.fc15
+* Wed Nov 02 2011 Nicolas Chauvet <kwizart@gmail.com> - 10:16-5
+- rebuild for kernel 3.1.0-7.fc16
 
-* Wed Jun 15 2011 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 10:15-4
-- rebuild for kernel 2.6.38.8-32.fc15
+* Sun Oct 30 2011 Nicolas Chauvet <kwizart@gmail.com> - 10:16-4
+- rebuild for kernel 3.1.0-5.fc16
 
-* Sat Jun 04 2011 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 10:15-3
-- rebuild for kernel 2.6.38.7-30.fc15
+* Thu Oct 27 2011 Nicolas Chauvet <kwizart@gmail.com> - 10:16-2
+- rebuild for kernel 3.1.0-1.fc16
 
-* Sat May 28 2011 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 10:15-2
-- rebuild for kernel 2.6.38.6-27.fc1
+* Sat Oct 22 2011 Nicolas Chauvet <kwizart@gmail.com> - 10:16-1
+- rebuild for kernel 3.1.0-0.rc10.git0.1.fc16
+
+* Sat Oct 22 2011 Nicolas Chauvet <kwizart@gmail.com> - 10:16-0
+- Introduce F-16
 
 * Sat May 28 2011 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 10:15-1
 - rebuild for kernel 2.6.38.6-26.rc1.fc15
