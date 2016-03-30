@@ -3,6 +3,7 @@
 # buildsys-build-list-kernels.sh - Helper script for building kernel module RPMs for Fedora
 #
 # Copyright (c) 2007 Thorsten Leemhuis <fedora@leemhuis.info>
+#               2012 Nicolas Chauvet   <kwizart@gmail.com>
 #
 # Permission is hereby granted, free of charge, to any person obtaining
 # a copy of this software and associated documentation files (the
@@ -26,10 +27,12 @@
 
 shopt -s extglob
 
-myver="0.1.0"
+myver="0.2.1"
 repo=rpmfusion
 myprog="buildsys-build-${repo}-kerneldevpkgs"
-supported_targetarchs="i586 i686 x86_64 ppc ppc64"
+supported_targetarchs="i686 x86_64 ppc ppc64 ppc64p7 armv5tel armv7l armv7hl s390x"
+#This has changed in Fedora >= 20
+variant_sep="+"
 if [[ -e ./buildsys-build-${repo}-kerneldevpkgs-current ]]; then
 	prefix=./buildsys-build-${repo}-
 else
@@ -66,7 +69,44 @@ bb_list_kernels_ppc()
 
 bb_list_kernels_ppc64()
 {
+        bb_list_kernels_default ${1}
+}
+
+bb_list_kernels_ppc64p7()
+{
 	bb_list_kernels_default ${1}
+}
+
+
+bb_list_kernels_armv5tel()
+{
+	bb_list_kernels_default ${1}
+}
+
+bb_list_kernels_armv7l()
+{
+	bb_list_kernels_default ${1}
+}
+
+bb_list_kernels_armv7hl()
+{
+	bb_list_kernels_default ${1}
+	echo ${1}lpae
+}
+
+bb_list_kernels_aarch64()
+{
+	bb_list_kernels_default ${1}
+}
+
+bb_list_kernels_s390x()
+{
+        bb_list_kernels_default ${1}
+}
+
+bb_list_kernels_sparc64()
+{
+        bb_list_kernels_default ${1}
 }
 
 
@@ -99,11 +139,11 @@ print_kernels ()
 				fi
 			else
 				if [[ "${requires}" ]]; then
-					echo "Requires: kernel-devel-uname-r = ${this_kernel_verrel}.${this_target}${this_kernel_variant:+.${this_kernel_variant}}"
+					echo "Requires: kernel-devel-uname-r = ${this_kernel_verrel}.${this_target}${this_kernel_variant:+${variant_sep}${this_kernel_variant}}"
 				fi
 	
 				if [[ "${buildrequires}" ]]; then 
-					echo "BuildRequires: kernel-devel-uname-r = ${this_kernel_verrel}.${this_target}${this_kernel_variant:+.${this_kernel_variant}}"
+					echo "BuildRequires: kernel-devel-uname-r = ${this_kernel_verrel}.${this_target}${this_kernel_variant:+${variant_sep}${this_kernel_variant}}"
 				fi
 			fi
 		else
@@ -125,7 +165,7 @@ print_kernels ()
 					echo unknown.${this_target}${this_kernel_variant:+.${this_kernel_variant}}
 				fi
 			else
-				echo ${this_kernel_verrel}.${this_target}${this_kernel_variant:+.${this_kernel_variant}}
+				echo ${this_kernel_verrel}.${this_target}${this_kernel_variant:+${variant_sep}${this_kernel_variant}}
 			fi
 		fi
 	done

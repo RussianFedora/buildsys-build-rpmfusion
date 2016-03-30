@@ -2,8 +2,8 @@
 
 Name:           buildsys-build-%{repo}
 Epoch:          10
-Version:        16
-Release:        5.R
+Version:        23
+Release:        3
 Summary:        Tools and files used by the %{repo} buildsys 
 
 Group:          Development/Tools
@@ -86,8 +86,130 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-* Mon Nov 14 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 10:16-5.R
-- rebuilt for kernel 3.1.1-1.fc16
+* Sat Oct 24 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:23-1
+- rebuild for kernel 4.2.3-300.fc23
+
+* Fri Aug 07 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:22-7
+- rebuild for kernel 4.1.4-200.fc22
+
+* Wed Aug 05 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:22-6
+- rebuild for kernel 4.1.3-200.fc22
+
+* Wed Aug 05 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:22-5
+- rebuild for kernel 4.1.3-201.fc22
+
+* Wed Jul 29 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:22-4
+- rebuild for kernel 4.1.2-200.fc22
+
+* Fri Jul 24 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:22-3
+- rebuild for kernel 4.1.3-200.fc22
+
+* Wed Jul 22 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:22-2
+- rebuild for kernel 4.0.8-300.fc22
+
+* Mon May 25 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:22-1
+- rebuild for kernel 4.0.4-301.fc22
+
+* Mon May 11 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:22-0.2
+- Rebuilt for kernel 4.0.2-300.fc22
+
+* Tue May 05 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:22-0.1
+- Bump for f22 branch
+
+* Wed Apr 22 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-20
+- rebuild for kernel 3.19.5-200.fc21
+
+* Wed Apr 15 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-19.1
+- rebuild for kernel 3.19.4-200.fc21
+
+* Fri Apr 03 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-18.1
+- Rebuilt for refresh repodata
+
+* Sat Mar 28 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-18
+- rebuild for kernel 3.19.3-200.fc21
+
+* Fri Mar 27 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-17
+- rebuild for kernel 3.19.2-201.fc21
+
+* Mon Mar 23 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-16
+- rebuild for kernel 3.19.2-200.fc21
+
+* Sat Mar 21 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-15
+- rebuild for kernel 3.19.1-201.fc21
+
+* Tue Mar 10 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-14
+- rebuild for kernel 3.18.9-200.fc21
+
+* Tue Mar 03 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-13
+- rebuild for kernel 3.18.8-201.fc21
+
+* Sat Feb 14 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-12
+- rebuild for kernel 3.18.7-200.fc21
+
+* Sun Feb 08 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-11
+- rebuild for kernel 3.18.6-200.fc21
+
+* Wed Feb 04 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-10
+- rebuild for kernel 3.18.5-201.fc21
+
+* Sat Jan 31 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-9
+- rebuild for kernel 3.18.5-200.fc21
+
+* Wed Jan 21 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-8
+- rebuild for kernel 3.18.3-201.fc21
+
+* Thu Jan 15 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-7
+- rebuild for kernel 3.18.2-200.fc21
+
+* Sat Jan 10 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:21-6
+- rebuild for kernel 3.17.8-300.fc21
+
+* Thu Dec 18 2014 Nicolas Chauvet <kwizart@gmail.com> - 10:21-5
+- rebuild for kernel 3.17.7-300.fc21
+
+* Sun Dec 14 2014 Nicolas Chauvet <kwizart@gmail.com> - 10:21-4
+- rebuild for kernel 3.17.6-300.fc21
+
+* Sat Dec 13 2014 Nicolas Chauvet <kwizart@gmail.com> - 10:21-2
+- rebuild for kernel 3.17.4-302.fc21
+
+* Fri Dec 05 2014 Nicolas Chauvet <kwizart@gmail.com> - 10:21-1
+- rebuild for kernel 3.17.4-301.fc21
+
+* Fri Jul 18 2014 Nicolas Chauvet <kwizart@gmail.com> - 10:21-0.2
+- Rebuilt to test fedora branched packages
+
+* Thu Dec 19 2013 Nicolas Chauvet <kwizart@gmail.com> - 10:21-0.1
+- Open Fedora-21/Rawhide
+
+* Sat Dec 14 2013 Nicolas Chauvet <kwizart@gmail.com> - 10:20-1
+- Tag for F-20 GA
+
+* Tue Dec 10 2013 Nicolas Chauvet <kwizart@gmail.com> - 10:20-0.6
+- rebuild for kernel 3.11.10-301.fc20
+
+* Sat Dec 07 2013 Nicolas Chauvet <kwizart@gmail.com> - 10:20-0.5
+- Fix kernel variant + separator
+- rebuild for kernel 3.11.10-300.fc20
+- Add support for aarch64
+
+* Sun Dec 01 2013 Nicolas Chauvet <kwizart@gmail.com> - 10:20-0.3
+- rebuild for kernel 3.11.9-300.fc20
+
+* Thu Nov 21 2013 Nicolas Chauvet <kwizart@gmail.com> - 10:20-0.2
+- Add lpae as a known kvarriant
+
+* Thu Aug 01 2013 Nicolas Chauvet <kwizart@gmail.com> - 10:20-0.1
+- Bump for F-20
+
+* Fri Sep 07 2012 Nicolas Chauvet <kwizart@gmail.com> - 10:18-0.2
+- Bump for secondary
+
+* Mon Apr 16 2012 Nicolas Chauvet <kwizart@gmail.com> - 10:18-0.1
+- Build for default F-18 kernels
+
+* Tue Jan 03 2012 Nicolas Chauvet <kwizart@gmail.com> - 10:17-0.1
+- Build for default F-17 kernels
 
 * Wed Nov 02 2011 Nicolas Chauvet <kwizart@gmail.com> - 10:16-5
 - rebuild for kernel 3.1.0-7.fc16
@@ -172,7 +294,7 @@ rm -rf $RPM_BUILD_ROOT
 * Sun Dec 28 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 10:11-0.4
 - rebuild for kernel 2.6.28-3.fc11
 
-* Sun Dec 27 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 10:11-0.3
+* Sat Dec 27 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 10:11-0.3
 - just track in the latest kernel
 
 * Sun Dec 21 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 10:11-0.2
@@ -251,10 +373,10 @@ rm -rf $RPM_BUILD_ROOT
 * Sat Nov 10 2007 Thorsten Leemhuis <fedora[AT]leemhuis[DOT]info> - 20-1
 - Update to latest kernels 2.6.23.1-49.fc8 2.6.21-2950.fc8xen
 
-* Tue Oct 29 2007 Thorsten Leemhuis <fedora[AT]leemhuis[DOT]info> - 19-1
+* Mon Oct 29 2007 Thorsten Leemhuis <fedora[AT]leemhuis[DOT]info> - 19-1
 - Update to latest kernels 2.6.23.1-41.fc8 2.6.21-2950.fc8xen
 
-* Tue Oct 28 2007 Thorsten Leemhuis <fedora[AT]leemhuis[DOT]info> - 18-1
+* Sun Oct 28 2007 Thorsten Leemhuis <fedora[AT]leemhuis[DOT]info> - 18-1
 - Update to latest kernels 2.6.23.1-41.fc8 2.6.21-2950.fc8xen
 
 * Sun Oct 28 2007 Thorsten Leemhuis <fedora[AT]leemhuis[DOT]info> - 17-3
