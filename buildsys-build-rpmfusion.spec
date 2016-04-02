@@ -2,8 +2,8 @@
 
 Name:           buildsys-build-%{repo}
 Epoch:          10
-Version:        23
-Release:        3
+Version:        24
+Release:        1
 Summary:        Tools and files used by the %{repo} buildsys 
 
 Group:          Development/Tools
@@ -86,6 +86,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Sat Apr  2 2016 Arkady L. Shane <ashejn@russianfedora.pro> - 10:24-1
+- bump version for Fedora 24
+
 * Sat Oct 24 2015 Nicolas Chauvet <kwizart@gmail.com> - 10:23-1
 - rebuild for kernel 4.2.3-300.fc23
 
